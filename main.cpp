@@ -171,6 +171,14 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 			ClearBackground({ 181, 171, 161, 1 }); // Flop cheat code
 		}
 
+		// Sun
+		if (!flop) {
+			DrawCircle(50, 50, 50, YELLOW);
+		}
+		else {
+			DrawCircle(50, 50, 50, BEIGE); // Flop cheat code
+		}
+
 		if (showFps) {
 			posX = static_cast<int>(position.x);
 			posY = static_cast<int>(position.y);
@@ -178,14 +186,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 			DrawText(TextFormat("FPS: %d", fps), 0, 30, 30, BLACK);
 			DrawText(TextFormat("X position: %d", posX), 0, 60, 30, BLACK);
 			DrawText(TextFormat("Y position %d", posY - 575), 0, 90, 30, BLACK);
-		}
-		
-		// Sun
-		if (!flop) {
-			DrawCircle(50, 50, 50, YELLOW);
-		}
-		else {
-			DrawCircle(50, 50, 50, BEIGE); // Flop cheat code
 		}
 
 		// Floor
