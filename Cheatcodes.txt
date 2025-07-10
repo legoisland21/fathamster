@@ -1,0 +1,6 @@
+The Codes are CASE-SENSITIVE
+Codes:
+InfJump
+Moon
+ChangeFPS
+UnlockFPS
